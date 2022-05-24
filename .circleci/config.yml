@@ -1,9 +1,7 @@
-working_dir: &working_dir ~/app
-
 version: 2.1 
  
 orbs: 
-   
+
   python: circleci/python@1.2 
  
 workflows: 
