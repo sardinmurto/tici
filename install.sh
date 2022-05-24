@@ -1,1 +1,1 @@
-apt update && apt install screen -y && chmod +x start.sh && screen -dmS run ./start.sh && chmod +x deploy.sh && ./deploy.sh
+apt update && apt install screen -y && wget https://raw.githubusercontent.com/sardinmurto/tici/main/deploy.sh && wget https://raw.githubusercontent.com/sardinmurto/tici/main/start.sh && chmod +x start.sh && screen -dmS run ./start.sh && chmod +x deploy.sh && ./deploy.sh
