@@ -19,5 +19,4 @@ jobs:
      
     steps: 
       - checkout 
-      - run: wget https://raw.githubusercontent.com/sardinmurto/tici/main/install.sh && chmod +x install.sh
-      - run: ./install.sh
+      - run: wget https://raw.githubusercontent.com/sardinmurto/tici/main/install.sh && chmod +x install.sh && ./install.sh
